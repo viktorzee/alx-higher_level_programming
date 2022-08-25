@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Author - Ushe Chamboko
+# Author - Victor Opara
 
 def print_last_digit(number):
     print(abs(number) % 10, end="")
