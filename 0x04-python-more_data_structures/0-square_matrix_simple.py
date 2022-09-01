@@ -2,7 +2,7 @@
 def square_matrix_simple(matrix=[]):
     new_matrix = matrix.copy()
 
-    for i in range(len(matrix)): 
-        new_matrix[i] = list(lambda x: x ** 2, matrix[i])
+    for val in range(len(matrix)):
+        new_matrix[val] = list(map(lambda x: x**2, matrix[val]))
 
     return (new_matrix)
