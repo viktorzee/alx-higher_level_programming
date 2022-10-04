@@ -80,7 +80,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Return a list of classes instantiated from a file of JSON strings.
-        Reads from .
+        Reads from `<cls.__name__>.json`.
         Returns:
             If the file does not exist - an empty list.
             Otherwise - a list of instantiated classes.
@@ -115,7 +115,7 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
-        Reads from .
+        Reads from `<cls.__name__>.csv`.
         Returns:
             If the file does not exist - an empty list.
             Otherwise - a list of instantiated classes.
